@@ -1,0 +1,96 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #333;
+}
+
+canvas {
+  display: block;
+  background: #555;
+  width: 100%;
+  height: 100%;
+}
+
+#playAgainBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: yellow;
+  display: none;
+}
+
+#shop {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #fffae3, #ffe0f0);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#shop h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+#shop button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #90ee90;
+  transition: 0.2s;
+}
+
+#shop button:hover {
+  background: #76d476;
+}
+
+#closeShopBtn {
+  background: #ff6b6b !important;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+}
+
+/* ריבועי צבע */
+#colorGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.colorBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.locked {
+  background: gray !important;
+  cursor: not-allowed;
+}

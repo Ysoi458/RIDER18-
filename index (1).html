@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>משחק מכוניות</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <button id="playAgainBtn" style="display:none;">Play Again</button>
+
+  <!-- חנות -->
+  <div id="shop" style="display:none;">
+    <h2>🏪 חנות</h2>
+    <p>כסף: <span id="money">0</span> ₪</p>
+    <button onclick="buyLife()">קנה חיים (15 ₪)</button>
+    <button onclick="buyColor()">קנה צבע (5 ₪)</button>
+    <button id="closeShopBtn" onclick="closeShop()">סגור</button>
+
+    <!-- ריבועי צבע -->
+    <div id="colorGrid"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
